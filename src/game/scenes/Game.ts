@@ -86,7 +86,6 @@ export class Game extends Scene {
         platforms.create(550 + this.TILE_WIDTH, this.baseY - 325, "grassHalf");
 
         //PARKOUR 2
-        this.add.image(1815, this.baseY + 35, "castleBack");
         this.add.image(1885, this.baseY + 35, "castleBack");
         platforms.create(2205, this.baseY - 105, "grassHalfLeft");
         platforms.create(
@@ -95,6 +94,11 @@ export class Game extends Scene {
             "grassHalfRight",
         );
         this.add.image(2425, this.baseY + 35, "castleBack");
+        this.add.image(
+            2500 + 2 * this.TILE_WIDTH,
+            this.baseY + 35,
+            "castleBack",
+        );
         platforms.create(2500, this.baseY - 35, "box");
         platforms.create(2500, this.baseY - 105, "box");
         platforms.create(2500 + this.TILE_WIDTH, this.baseY - 105, "box");
